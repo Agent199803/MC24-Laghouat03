@@ -20,7 +20,7 @@ jobs:
 
       - run: npx expo prebuild
 
-      - run: npx expo run:android
+      - run: cd android && ./gradlew assembleDebug
 
       - uses: actions/upload-artifact@v4
         with:
